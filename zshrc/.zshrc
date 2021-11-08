@@ -32,25 +32,18 @@ RPROMPT='%f%b%k${vcs_info_msg_0_}%F{green}%K{black}Σ%F{green}%K{black} ${NYA}%f
 
 #alias
 alias relogin='exec $SHELL -l'
-alias vim='nvim'
 alias emacs='nvim'
+alias vim='nvim'
 alias ls='exa'
-alias cat='bat'
+#alias cat='bat'
 alias find='fd'
 alias ps='procs'
 alias grep='rg'
 alias od='hexyl'
-
-
-#pyenv
-export PYENV_ROOT="$HOME/.pyenv"
-export PATH="$PYENV_ROOT/bin:$PATH"
-eval "$(pyenv init -)"
-
-#pipenv
-export PIPENV_VENV_IN_PROJECT=true
-export PATH=$HOME/.local/bin:$PATH
-
-
+alias at='atcoder-tools'
+alias atc='cp ~/atcoder-workspace '
+alias dmain='django-admin'
 
 export PATH="$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH"
+export PATH="$HOME/.nodenv/bin:$PATH"
+eval "$(nodenv init -)"
